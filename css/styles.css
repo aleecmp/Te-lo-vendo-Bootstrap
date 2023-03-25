@@ -1,0 +1,53 @@
+body {
+    background: #f8f8f8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.body-contact {
+    height: auto;
+    /* min-height: 100vh; */
+    margin-bottom: 60px;
+
+}
+
+nav {
+    background-color: #007bff;
+    color: white;
+}
+h1 {
+    display: flex;
+    font-size: 1rem;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #007bff;
+    color: white;
+
+}
+
+.carousel-caption{
+    color: white;
+    background-color: #007bff52;
+    padding: 0;
+    
+}
+
+/* .carousel-image {
+    height: 500px;
+} */
+
+.paragraph {
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+.footer {
+    position: relative;
+    margin-top: 200px;
+    bottom: 0;
+    width:100%;
+    left: 0;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
