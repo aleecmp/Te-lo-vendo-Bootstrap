@@ -86,33 +86,40 @@
 
         <div class="row">
           <div class="col-md-9 mb-md-0 mb-5">
-            <form
-              id="contact-form"
-              name="contact-form"
-              action="mail.php"
-              method="POST"
-            >
+            <form id="contact-form" name="contact-form">
               <div class="row">
                 <div class="col-md-6">
                   <div class="md-form mb-0">
+                    <small
+                      id="nameHelp"
+                      class="form-text text-danger"
+                    ></small>
                     <input
                       type="text"
                       id="name"
                       name="name"
                       class="form-control"
+                      placeholder="Nombre Apellido"
                     />
+                    <label style="color: red">*</label>
                     <label for="name" class="">Tu nombre</label>
                   </div>
                 </div>
 
                 <div class="col-md-6">
                   <div class="md-form mb-0">
+                    <small
+                      id="emailHelp"
+                      class="form-text text-danger"
+                    ></small>
                     <input
                       type="text"
                       id="email"
                       name="email"
                       class="form-control"
+                      placeholder="tu@correo.com"
                     />
+                    <label style="color: red">*</label>
                     <label for="email" class="">Tu correo</label>
                   </div>
                 </div>
@@ -121,12 +128,19 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="md-form mb-0">
+                    <small
+                      id="subjectHelp"
+                      class="form-text text-danger"
+                    ></small>
                     <input
                       type="text"
                       id="subject"
                       name="subject"
                       class="form-control"
+                      placeholder="Breve descripción"
+                      maxlength="100"
                     />
+                    <label style="color: red">*</label>
                     <label for="subject" class="">Asunto</label>
                   </div>
                 </div>
@@ -135,23 +149,30 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="md-form">
+                    <small
+                      id="messageHelp"
+                      class="form-text text-danger"
+                    ></small>
                     <textarea
-                      type="text"
                       id="message"
                       name="message"
-                      rows="2"
+                      rows="4"
                       class="form-control md-textarea"
+                      maxlength="500"
+                      placeholder="Escribe tu mensaje aquí..."
                     ></textarea>
+                    <label style="color: red">*</label>
                     <label for="message">Tu mensaje</label>
                   </div>
                 </div>
               </div>
+              <div class="text-center text-md-left">
+                <button type="submit" class="btn btn-primary">
+                  Enviar
+                </button>
+              </div>
+              <div class="status"></div>
             </form>
-
-            <div class="text-center text-md-left">
-              <a class="btn btn-primary">Enviar</a>
-            </div>
-            <div class="status"></div>
           </div>
 
           <div class="col-md-3 text-center">
@@ -219,5 +240,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- /script bootstrap -->
+    <script src="js/funciones.js"></script>
   </body>
 </html>
